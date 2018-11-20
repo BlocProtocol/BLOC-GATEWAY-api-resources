@@ -17,7 +17,7 @@ tags:
   - name: transfer
     description: >-
       Send and view transactions belonging to TRTL addresses generated with TRTL
-      Services.
+      Serfvices.
   - name: wallet
     description: View your Turtle-Service wallet containers registered with TRTL Services.
   - name: status
@@ -59,7 +59,7 @@ paths:
     get:
       tags:
         - address
-      summary: List details of an address.
+      summary: Get details of an address.
       parameters:
         - in: path
           name: address
@@ -139,7 +139,7 @@ paths:
     get:
       tags:
         - address
-      summary: List all addresses.
+      summary: Get all addresses.
       responses:
         '200':
           description: OK
@@ -241,7 +241,7 @@ paths:
     get:
       tags:
         - address
-      summary: List the public and secret spend key of an address.
+      summary: Get the public and secret spend key of an address.
       parameters:
         - in: path
           name: address
@@ -329,7 +329,7 @@ paths:
     get:
       tags:
         - address
-      summary: List integrated addresses belonging to an address.
+      summary: Get all integrated addresses belonging to an address.
       parameters:
         - in: path
           name: address
@@ -541,7 +541,7 @@ paths:
     get:
       tags:
         - wallet
-      summary: List wallet container.
+      summary: Get wallet container info and health check.
       responses:
         '200':
           description: OK
@@ -610,7 +610,7 @@ paths:
     get:
       tags:
         - status
-      summary: List TRTL Services infrastructure.
+      summary: Get TRTL Services infrastructure health check.
       responses:
         '200':
           description: OK
