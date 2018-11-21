@@ -58,6 +58,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -101,6 +105,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -138,6 +146,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -171,6 +183,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       
@@ -241,6 +257,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -283,6 +303,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -331,6 +355,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -377,6 +405,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -413,6 +445,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
       security:
@@ -483,9 +519,12 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
-
       security:
         - bearerAuth: []
         
@@ -566,6 +605,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
   
@@ -649,6 +692,10 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
 
@@ -702,5 +749,9 @@ paths:
           description: Invalid Input
         '412':
           description: Precondition Failed
+        '429':
+          description: Too Many Requests
+        '500':
+          description: Internal Server Error
         '503':
           description: Service Unavailable
