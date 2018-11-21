@@ -51,6 +51,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -94,6 +96,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -131,6 +135,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -162,6 +168,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -233,6 +241,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -275,6 +285,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -306,6 +318,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -363,6 +377,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -398,6 +414,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -427,6 +445,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -533,6 +553,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -602,6 +624,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
       security:
@@ -647,6 +671,8 @@ paths:
           description: Not Found
         '405':
           description: Invalid Input
+        '412':
+          description: Precondition Failed
         '503':
           description: Service Unavailable
 servers:
