@@ -522,7 +522,7 @@ paths:
                 - to
                 - amount
                 - fee
-  '/{transactionHash}':
+  '/transfer/{transactionHash}':
     get:
       tags:
         - transfer

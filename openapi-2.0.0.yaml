@@ -528,7 +528,7 @@ paths:
       security:
         - bearerAuth: []
         
-  /{transactionHash}:
+  /transfer/{transactionHash}:
     get:
       tags:
       - transfer
