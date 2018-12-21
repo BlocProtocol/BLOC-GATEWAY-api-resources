@@ -34,7 +34,7 @@ paths:
     post:
       tags:
       - address
-      summary: Create a new adresss.
+      summary: Create a new address.
       responses:
         '201':
           description: Created
@@ -495,7 +495,7 @@ paths:
         
       - in: formData
         name: extra
-        description: A valid 64 hex character string.
+        description: A valid hex character string.
         type: string
         
 
