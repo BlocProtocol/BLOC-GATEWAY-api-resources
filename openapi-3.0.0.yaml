@@ -1,27 +1,27 @@
 openapi: 3.0.0
 info:
   description: >-
-    API documentation for TRTL Services - build on-chain apps in an easy, fun
-    and fast way on the TRTL Network.
+    API documentation for BLOC-Gateway - build on-chain apps in an easy, fun
+    and fast way on the BLOC.MONEY.
   version: 0.9.0
-  title: TRTL.Services API
-  termsOfService: 'https://trtl.services'
+  title: BLOC Gateway API
+  termsOfService: 'https://bloc-gateway.com'
   license:
     name: 'AGPL-3.0 '
     url: 'https://www.gnu.org/licenses/agpl-3.0.en.html'
 tags:
   - name: address
     description: >-
-      Generate, manage and interact with TRTL addresses generated with TRTL
+      Generate, manage and interact with BLOC addresses generated with BLOC
       Services.
   - name: transfer
     description: >-
-      Send and view transactions belonging to TRTL addresses generated with TRTL
+      Send and view transactions belonging to BLOC addresses generated with BLOC
       Serfvices.
   - name: wallet
-    description: View your Turtle-Service wallet containers registered with TRTL Services.
+    description: View your BLOC.MONEY wallet containers registered with BLOC-Gateway.
   - name: status
-    description: Get status regarding TRTL Services infrastructure.
+    description: Get status regarding BLOC-Gateway infrastructure.
 paths:
   /address:
     post:
@@ -69,7 +69,7 @@ paths:
       parameters:
         - in: path
           name: address
-          description: A valid TRTL address registered generated with TRT Services.
+          description: A valid BLOC address registered generated with BLOC-Gateway.
           required: true
           schema:
             type: string
@@ -117,7 +117,7 @@ paths:
       parameters:
         - in: path
           name: address
-          description: A valid TRTL address registered generated with TRT Services.
+          description: A valid BLOC address registered generated with BLOC-Gateway.
           required: true
           schema:
             type: string
@@ -132,7 +132,7 @@ paths:
                   address:
                     type: string
                     example: >-
-                      TRTLuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAh5K7szBBdHCpj6hXR7FRUtDFSHooJLRtszmHUFpzPxLRXU8ESfa4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYUQHfb3
+                      BLOCuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAh5K7szBBdHCpj6hXR7FRUtDFSHooJLRtszmHUFpzPxLRXU8ESfa4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYUQHfb3
         '400':
           description: Bad Request
         '401':
@@ -167,9 +167,9 @@ paths:
                 type: object
                 example:
                   - >-
-                    TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
+                    BLOCuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
                   - >-
-                    TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
+                    BLOCuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
         '400':
           description: Bad Request
         '401':
@@ -198,13 +198,13 @@ paths:
       parameters:
         - in: path
           name: address
-          description: A valid TRTL address registered generated with TRT Services.
+          description: A valid BLOC address registered generated with BLOC-Gateway.
           required: true
           schema:
             type: string
         - in: path
           name: blockIndex
-          description: A valid TRTL block index.
+          description: A valid BLOC block index.
           required: true
           schema:
             type: integer
@@ -217,7 +217,7 @@ paths:
                 type: object
                 example:
                   - address: >-
-                      TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
+                      BLOCuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
                     amount: 100
                     fee: 1
                     sfee: 2.1
@@ -233,7 +233,7 @@ paths:
                     blockIndex: 735963
                     confirms: 40
                   - address: >-
-                      TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
+                      BLOCuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
                     amount: 30
                     fee: 0.3
                     sfee: 0.63
@@ -275,7 +275,7 @@ paths:
       parameters:
         - in: path
           name: address
-          description: A valid TRTL address registered generated with TRT Services.
+          description: A valid BLOC address registered generated with BLOC-Gateway.
           required: true
           schema:
             type: string
@@ -331,7 +331,7 @@ paths:
                   address:
                     type: string
                     example: >-
-                      TRTLuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAh5K7szBBdHCpj6hXR7FRUtDFSHooJLRtszmHUFpzPxLRXU8ESfa4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYUQHfb3
+                      BLOCuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAh5K7szBBdHCpj6hXR7FRUtDFSHooJLRtszmHUFpzPxLRXU8ESfa4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYUQHfb3
         '400':
           description: Bad Request
         '401':
@@ -359,7 +359,7 @@ paths:
               type: object
               properties:
                 address:
-                  description: A valid TRTL address and paymentId.
+                  description: A valid BLOC address and paymentId.
                   type: string
                 paymentId:
                   description: A 64 hex character string.
@@ -375,7 +375,7 @@ paths:
       parameters:
         - in: path
           name: address
-          description: A valid TRTL address registered generated with TRT Services.
+          description: A valid BLOC address registered generated with BLOC-Gateway.
           required: true
           schema:
             type: string
@@ -388,11 +388,11 @@ paths:
                 type: object
                 example:
                   - address: >-
-                      TRTLuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAh4sxEq8eiJbesVDs6md1hWnmWgSNVA8N8RrzPY58TASkmN8rkZN4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYW1ngoP
+                      BLOCuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAh4sxEq8eiJbesVDs6md1hWnmWgSNVA8N8RrzPY58TASkmN8rkZN4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYW1ngoP
                     paymentId: >-
                       7d89a2d16365a1198c46db5bbe1af03d2b503a06404f39496d1d94a0a46f8803
                   - address: >-
-                      TRTLuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAhBRV4yQeiJbesVDs6md1hWnmWgSNVA8N8RrzPY58TASkmN8rkZN4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYXRdivT
+                      BLOCuxtknTzHFw1GbpJCJxHFtNQdt1vuBHnr84suMomJJ6MZ5R4mUBH9bSvL4L5tKw9Zw377XD87DAZxUBK4DCoXAQQAhBRV4yQeiJbesVDs6md1hWnmWgSNVA8N8RrzPY58TASkmN8rkZN4b5kSQcPeryDmBbv3aWCewS8x5X8E4kYM17xtYXRdivT
                     paymentId: >-
                       7d89a2d16365a1198c46db5bbe1af03d2b503a06404f39496d1d94a0a46f8804
         '400':
@@ -419,7 +419,7 @@ paths:
     get:
       tags:
         - transfer
-      summary: Calculate the fee in TRTL for a wallet container.
+      summary: Calculate the fee in BLOC for a wallet container.
       parameters:
         - in: path
           name: amount
@@ -498,17 +498,17 @@ paths:
               type: object
               properties:
                 from:
-                  description: A valid TRTL address generated with TRTL Services.
+                  description: A valid BLOC address generated with BLOC-Gateway.
                   type: string
                 to:
-                  description: A valid TRTL address.
+                  description: A valid BLOC address.
                   type: string
                 amount:
-                  description: A transaction amount in TRTL with two decimals points.
+                  description: A transaction amount in BLOC with two decimals points.
                   type: number
                   format: float
                 fee:
-                  description: A network transaction fee in TRTL with two decimal points.
+                  description: A network transaction fee in BLOC with two decimal points.
                   type: number
                   format: float
                 paymentId:
@@ -526,7 +526,7 @@ paths:
     get:
       tags:
         - transfer
-      summary: Get a transaction created with TRTL Services by hash.
+      summary: Get a transaction created with BLOC-Gateway by hash.
       parameters:
         - in: path
           name: transactionHash
@@ -545,7 +545,7 @@ paths:
                   address:
                     type: string
                     example: >-
-                      TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
+                      BLOCuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP
                   amount:
                     type: number
                     format: float
@@ -682,7 +682,7 @@ paths:
     get:
       tags:
         - status
-      summary: Get TRTL Services infrastructure health check.
+      summary: Get BLOC-Gateway infrastructure health check.
       responses:
         '200':
           description: OK
@@ -728,8 +728,8 @@ paths:
         '503':
           description: Service Unavailable
 servers:
-  - url: 'https://api.trtl.services/v1'
-  - url: 'http://api.trtl.services/v1'
+  - url: 'https://api.BLOC Gateway/v1'
+  - url: 'http://api.BLOC Gateway/v1'
 components:
   securitySchemes:
     bearerAuth:
